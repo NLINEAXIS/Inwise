@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>EMAIL</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>listOfJSONString</name>
+            <value>
+                <elementReference>emailBodyTesting</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>EMAIL</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>emailBodyTesting</name>
+        <dataType>String</dataType>
+        <expression>&apos;{ &quot;recordId&quot;: &quot;&apos; +{!$Record.Id}+&apos;&quot;,&quot;ToName&quot;: &quot;test&quot;,&quot;Email&quot;: &quot;test@gmail.com&quot;,&quot;from_email&quot;: &quot;Test123@gmail.com&quot;,&quot;reply_to&quot;: &quot;test1233@gmail.com&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true,&quot;template_id&quot;: &quot;20003&quot;,&quot;subject&quot;:&quot; test&quot;,&quot;from_name&quot;: &quot;test&quot; ,&quot;tags&quot;:&quot;[SF1,SF3]&quot;}&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>smsSend</name>
+        <dataType>String</dataType>
+        <expression>&apos;{&quot;recordId&quot;: &quot;&apos; + {!$Record.Id} + &apos;&quot;,&quot;mobileNumber&quot;:&quot;&apos; + {!$Record.MobilePhone} 
++ &apos;&quot;,&quot;smsText&quot;:&quot;0123456789 This is a test.&apos;
++ &apos;\n&apos; + &apos;\n&apos; + &apos;This is the record id: &apos; + {!$Record.Id}  + &apos; &apos; + {!$Record.FirstName}
++ &apos;&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true}&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>WhatsAppJSONString</name>
+        <dataType>String</dataType>
+        <expression>&apos;{&quot;recordId&quot;: &quot;&apos; +{!$Record.Id}+&apos;&quot;,&quot;content&quot;: &quot; test &quot;, &quot;template_id&quot;: &quot;20003&quot;, &quot;mobileNumber&quot;: &quot;&quot;,  &quot;saveToInwiseMessagingHistory&quot;: true,&quot;createTask&quot;: true,  &quot;tags&quot;: &quot;[SF1,SF3]&quot;, &quot;inwiseAccount&quot;: &quot;&quot;, &quot;media_url&quot;: &quot; test.com&quot;, &quot;async&quot;: true,&quot;template_fields_mapping&quot;: &quot;  [{key: 1,value: field3},{key: 2,value: field5}] &quot;} &apos;</expression>
+    </formulas>
+    <interviewLabel>sendWhenDeparment=SMS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>sendWhenDeparment=SMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Department</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>904</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

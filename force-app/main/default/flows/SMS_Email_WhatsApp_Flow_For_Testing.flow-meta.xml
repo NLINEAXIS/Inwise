@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>whatsApp</name>
+        <label>whatsApp</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>WhatsApp</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>listOfJSONString</name>
+            <value>
+                <elementReference>whatsAppJson</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>WhatsApp</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>EmailJSON</name>
+        <dataType>String</dataType>
+        <expression>&apos;{ &quot;recordId&quot;: &quot;&apos; +{!$Record.Id}+&apos;&quot;,&quot;toname&quot;: &quot;name&quot;,&quot;email&quot;: &quot;test@gmail.com&quot;,&quot;from_email&quot;: &quot;test123@gmail.com&quot;,&quot;reply_to&quot;: &quot;boaz.apt@gmail.com&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true,&quot;template_id&quot;: &quot;20003&quot;,&quot;subject&quot;:&quot;test subject &quot;,&quot;from_name&quot;: &quot;test&quot; ,&quot;tags&quot;:&quot;[SF1,SF3]&quot;}&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>jsonBody</name>
+        <dataType>String</dataType>
+        <expression>&apos;{&quot;recordId&quot;: &quot;&apos; + {!$Record.Id} + &apos;&quot;,&quot;smsText&quot;:&quot; 3 300 three humder Character Counter is a 100% free online character count calculator thats one to use. Sometimes users prefer si&apos; + {!$Record.MobilePhone} + &apos;&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true,&quot;mobileNumber&quot;:&quot;&apos; + {!$Record.MobilePhone} + &apos;&quot;}&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>whatsAppJson</name>
+        <dataType>String</dataType>
+        <expression>&apos;{ &quot;recordId&quot;: &quot;&apos; + {!$Record.Id} + &apos;&quot;,&quot;content&quot;: &quot;&quot;,&quot;template_id&quot;: &quot;23663&quot;,&quot;mobileNumber&quot;: &quot;&apos; + {!$Record.MobilePhone} + &apos;&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true,&quot;tags&quot;:&quot;[SF1,SF3]&quot;,&quot;inwiseAccount&quot;:&quot;&quot;,&quot;media_url&quot;: &quot;&quot;,&quot;async&quot;: true,&quot;template_fields_mapping&quot;: [{&quot;key&quot;: 1,&quot;value&quot;: &quot;#field1#&quot;},{&quot;key&quot;: 2,&quot;value&quot;: &quot;#field2#&quot;}] }&apos;</expression>
+    </formulas>
+    <interviewLabel>SMS/Email/WhatsApp Flow For Testing {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SMS/Email/WhatsApp Flow For Testing</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>whatsApp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Department</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>WA</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

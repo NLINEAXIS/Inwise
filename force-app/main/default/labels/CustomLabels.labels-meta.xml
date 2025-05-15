@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Encrypted_Field_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Encrypted Field Error</shortDescription>
+        <value>First field of your selected list view is encrypted field, Please change the order of field.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_InwiseSync_1</fullName>
+        <categories>StartTour for inwiseSync Page Step 1</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_InwiseSync_1</shortDescription>
+        <value>In this column you can see your inwise account fields. If you need more custom fields then you can do it inside your inwise account inwise.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_InwiseSync_2</fullName>
+        <categories>StartTour for inwiseSync Page Step 2</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_InwiseSync_2</shortDescription>
+        <value>In this column you can map your Salesforce contacts fields.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_InwiseSync_3</fullName>
+        <categories>StartTour for inwiseSync Page Step 3</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_InwiseSync_3</shortDescription>
+        <value>And this column you can do the same for your leads fields.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_1</fullName>
+        <categories>StartTour for inwiseHome Page Step 1</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_1</shortDescription>
+        <value>&lt;b&gt;inwise for Salesforce main 3 features:&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Filter and sync your Salesforce contacts and leads and into inwise.&lt;br&gt;&lt;br&gt;2. Sync your inwise landing pages into Salesforce.&lt;br&gt;&lt;br&gt;3. Build your Salesforce campaign members, design and send the email campaign with inwise and get the reports and detailed statistics.&lt;br&gt;&lt;br&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_1_1</fullName>
+        <categories>inwiseHome</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_1.1</shortDescription>
+        <value>&lt;b&gt;Visit our support center:&lt;a href=&quot;https://www.inwise.com/support/categories/inwise-for-salesforce/&quot; target=&quot;_blank&quot; style=&quot;color:#7b1a8b;&quot;&gt;
+&lt;u&gt;https://www.inwise.com/support/categories/inwise-for-salesforce/&lt;/u&gt;&lt;/a&gt;&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_2</fullName>
+        <categories>StartTour for inwiseHome Page Step 2</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_2</shortDescription>
+        <value>Here you will be able to connect your inwise accounts. Usually one inwise account will do the job but if you are a big customer with different users in your Salesforce organization then you might find it useful to connect some inwise accounts.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_3</fullName>
+        <categories>StartTour for inwiseHome Page Step 3</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_3</shortDescription>
+        <value>By pressing on the action &quot;Login&quot;, your inwise account will be open in new tab.&lt;br/&gt;
+You might be asked by your browser for the permission in the first time you try to login.&lt;br/&gt;
+&lt;img src=&quot;http://inwise.com/other-content/salesforce/inwise_homepage_sf.png&quot; width=&quot;450&quot; /&gt;</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_4</fullName>
+        <categories>StartTour for inwiseHome Page Step 4</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_4</shortDescription>
+        <value>Here you will be able to sync your Landing pages leads.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseHome_5</fullName>
+        <categories>StartTour for inwiseHome Page Step 5</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseHome_5</shortDescription>
+        <value>After you will set up your inwise account, you can start building filters on your Salesforce leads and contacts and sync them to inwise.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_1</fullName>
+        <categories>Start Tour - inwsieSetup Page Step 1</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_1</shortDescription>
+        <value>If you don\&apos;t have inwise account yet, you can provide these 3 details and get started immediately with free inwise account up to 500 leads/contacts</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_2</fullName>
+        <categories>Start Tour - inwsieSetup Page Step 2</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_2</shortDescription>
+        <value>If you already have an account in inwise, you can provide here your credentials and start working</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_3</fullName>
+        <categories>StartTour for inwiseSetup Page Step 3</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_3</shortDescription>
+        <value>please provide your email address, this will also be use to activate your account in inwise</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_4</fullName>
+        <categories>StartTour for inwiseSetup Page Step 4 Save Account</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_4</shortDescription>
+        <value>Choose nickname to your account</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_5</fullName>
+        <categories>StartTour for inwiseSetup Page Step 5</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_5</shortDescription>
+        <value>Provide your inwise account api key, you can find under &quot;My user&quot; in your inwise account.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwiseSetup_6</fullName>
+        <categories>StartTour for inwiseSetup Page Step 5</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwiseSetup_6</shortDescription>
+        <value>Provide your inwise account username, password and token.</value>
+    </labels>
+    <labels>
+        <fullName>StartTour_inwise_welcomePage</fullName>
+        <categories>StartTour for inwiseHome Page Step 0</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartTour_inwise_welcomePage</shortDescription>
+        <value>&lt;div style=&quot;float:right;width:66%;&quot;&gt;&lt;h1&gt;Welcome&lt;/h1&gt;&lt;p&gt;inwise is an advanced email marketing system to manage your digital marketing activity&lt;/p&gt;&lt;/div&gt;&lt;img src=&quot;http://inwise.com/other-content/salesforce/welcome-top-img.png&quot; height=&quot;140&quot; width=&quot;150&quot; /&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;&lt;/header&gt;&lt;section&gt;&lt;center&gt;&lt;h2&gt;How can you use the system?&lt;/h2&gt;&lt;/center&gt;&lt;br/&gt;&lt;div class=&quot;wel-item floatA&quot;&gt;&lt;i class=&quot;fa fa-file&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;Landing pages&lt;br/&gt;and forms&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;wel-item floatA&quot;&gt;&lt;i class=&quot;fa fa-mobile&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;SMS Campaigns&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;wel-item floatA&quot;&gt;&lt;i class=&quot;fa fa-paper-plane&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;Email  Campaigns&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;clear:both;&quot;&gt;&lt;/div&gt;&lt;/section&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ToDoHomeAccount</fullName>
+        <categories>Home</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToDoHomeAccount</shortDescription>
+        <value>Setup Account First. Please go to &lt;a href=&quot;http://www.inwise.com&quot; target=&quot;_blank&quot;&gt;inwise&lt;/a&gt; for more detail</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,79 @@
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<!--  Apex Classes  -->
+<types>
+<members>*</members>
+<name>ApexClass</name>
+</types>
+<!--  Apex Triggers  -->
+<types>
+<members>*</members>
+<name>ApexTrigger</name>
+</types>
+<!--  Lightning Web Components  -->
+<types>
+<members>*</members>
+<name>LightningComponentBundle</name>
+</types>
+<!--  Aura Components  -->
+<types>
+<members>*</members>
+<name>AuraDefinitionBundle</name>
+</types>
+<!--  Custom Objects  -->
+<types>
+<members>*</members>
+<name>CustomObject</name>
+</types>
+<!--  Permission Sets  -->
+<types>
+<members>*</members>
+<name>PermissionSet</name>
+</types>
+<!--  Flows  -->
+<types>
+<members>*</members>
+<name>Flow</name>
+</types>
+<!--  Profiles  -->
+<types>
+<members>*</members>
+<name>Profile</name>
+</types>
+<!--  Applications  -->
+<types>
+<members>*</members>
+<name>CustomApplication</name>
+</types>
+<!--  Tabs  -->
+<types>
+<members>*</members>
+<name>CustomTab</name>
+</types>
+<!--  Layouts  -->
+<types>
+<members>*</members>
+<name>Layout</name>
+</types>
+<!--  Record Types  -->
+<types>
+<members>*</members>
+<name>RecordType</name>
+</types>
+<!--  Static Resources  -->
+<types>
+<members>*</members>
+<name>StaticResource</name>
+</types>
+<!--  Custom Metadata Types  -->
+<types>
+<members>*</members>
+<name>CustomMetadata</name>
+</types>
+<!--  Custom Labels  -->
+<types>
+<members>*</members>
+<name>CustomLabel</name>
+</types>
+<!--  Version  -->
+<version>59.0</version>
+</Package>
