@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>X1</name>
+        <label>1</label>
+        <locationX>474</locationX>
+        <locationY>448</locationY>
+        <actionName>SMS</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>listOfJSONString</name>
+            <value>
+                <elementReference>aaa</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SMS</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>aaa</name>
+        <dataType>String</dataType>
+        <expression>&apos;{&quot;recordId&quot;: &quot;&apos; + {!$Record.Id} + &apos;&quot;,&quot;mobileNumber&quot;:&quot;&apos; + {!$Record.MobilePhone} 
++ &apos;&quot;,&quot;smsText&quot;:&quot;0123456789 This is a test.&apos;
++ &apos;\n&apos; + &apos;\n&apos; + &apos;This is the record id: &apos; + {!$Record.Id}  + &apos; &apos; + {!$Record.FirstName}
++ &apos;&quot;,&quot;saveToInwiseMessagingHistory&quot;:true,&quot;createTask&quot;:true}&apos;</expression>
+    </formulas>
+    <interviewLabel>test {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>test</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>330</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>X1</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Department</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ravit</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
