@@ -41,6 +41,7 @@ public with sharing class inwiseUtil {
     }
     
     public inwiseUtil(Account__c acc){
+        System.debug('==inwiseUtil===');
         apiUrl = apiURLGlobal;
         List<Account__c> listOfInwiseAccount = new List<Account__c>();
         if(acc != NULL){
