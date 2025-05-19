@@ -1,13 +1,11 @@
 {
-  "orgName": "Demo company",
+  "orgName": "My Scratch Org",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": ["AuthorApex"],
   "settings": {
-    "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
-    },
-    "mobileSettings": {
-      "enableS1EncryptedStoragePref2": false
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true,
+      "selfSetPasswordInApi": true
     }
   }
 }
