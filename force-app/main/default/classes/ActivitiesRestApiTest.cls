@@ -1,7 +1,7 @@
 /******************************************************************************************
 *Created By :  Shyam Vaishnav
 *Created On :  14-March-2022
-*Purpose    :  test class for activitiesRestApi
+*Purpose    :  test class for activitiesRestApi test
 ******************************************************************************************/
 @isTest
 Public class ActivitiesRestApiTest{
